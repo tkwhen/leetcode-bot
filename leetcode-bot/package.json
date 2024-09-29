@@ -1,0 +1,25 @@
+{
+  "name": "leetcode-bot",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "register": "node src/register.js",
+    "publish": "wrangler deploy",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.5.2",
+    "vitest": "2.0.5",
+    "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "discord-interactions": "^4.1.0",
+    "dotenv": "^16.4.5",
+    "itty-router": "^5.0.18",
+    "node-fetch": "^3.3.2"
+  }
+}
